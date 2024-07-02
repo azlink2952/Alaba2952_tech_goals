@@ -96,7 +96,7 @@ a {
 	}
 	[data-testid="hero"] {
 		display: flex;
-		padding-left: 20px;
+		padding-left: 40px;
 		justify-content: space-around;
 		width: 100%;
 	}
