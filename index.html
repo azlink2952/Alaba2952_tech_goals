@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Tech Goals</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>My Tech Goals</title>
 </head>
 <body data-testid="root">
 	<div data-testid="hero">
-	<div><a href="#">Home</a></div>
-	<div><a href="#">About</a></div>
-	<div><a href="#">Contact</a></div>
-	<div><a href="#">Blog</a></div>
+		<div><a href="#">Home</a></div>
+		<div><a href="#">About</a></div>
+		<div><a href="#">Contact</a></div>
+		<div><a href="#">Blog</a></div>
+	</div>
+	<div data-testid="dropdown">
+		<img src="images/icons8-striped-patterns-50.png" data-testid="dropdown-toggle">
+		<ul data-testid="dropdown-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Blog</a></li>
+		</ul>
 	</div>
 	<header data-testid="header">
 		<h1>My Tech Goals</h1>
@@ -19,7 +29,7 @@
 	<main data-testid="main">
 		<section data-testid="slack-info">
 			<h2>Slack Info</h2>
-            <img data-testid="slackProfilePicture" src="images/WhatsApp Image 2024-07-01 at 23.44.31.jpeg" alt="Slack Profile Picture">
+			<img data-testid="slackProfilePicture" src="images/WhatsApp Image 2024-07-01 at 23.44.31.jpeg" alt="Slack Profile Picture">
 			<p data-testid="slackDisplayName">Alaba Soneye</p>
 			<p data-testid="slackEmail">soneyeazla@gmail.com</p>
 			<section data-testid="currentDayTime">

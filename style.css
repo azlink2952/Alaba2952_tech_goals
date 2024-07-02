@@ -51,6 +51,12 @@ a {
     font-weight: bolder;
 	color:blueviolet;
 }
+[data-testid="hero"] {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin: 0 auto;
+}
 [data-testid="currentDayTime"] {
 	text-align: center;
 	width: 17%;
@@ -62,12 +68,7 @@ a {
 	color: green;
 	margin-top: -17px ;
 }
-[data-testid="hero"] {
-	display: flex;
-	justify-content: space-around;
-	width: 50%;
-	margin: 0 auto;
-}
+
 [data-testid="slackDisplayName"] {
 	font-size: 40px;
 	font-weight: bolder;
@@ -89,16 +90,16 @@ a {
 [data-testid="linkss"] {
 	display: none;
 }
+[data-testid="dropdown"] {
+	display: none;
+}
 @media (max-width: 480px) {
 	footer {
 		text-align: center;
 		font-size: 12px;
 	}
 	[data-testid="hero"] {
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-		margin: 0 auto;
+		display: none;
 	}
 	[data-testid="currentDayTime"] {
 		text-align: center;
@@ -107,9 +108,47 @@ a {
 		border-radius: 100%;
 		border: 2px solid green;
 	}
-	div {
-		padding-right: 20px;
-	}
+	[data-testid="dropdown"] {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  [data-testid="dropdown-toggle"] {
+		color: #fff;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-left: 20px;
+	  }
+	  
+	  [data-testid="dropdown-menu"] {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #f9f9f9;
+		border: 1px solid #ccc;
+		padding: 10px;
+		display: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li {
+		list-style: none;
+		margin: 0;
+		padding: 10px;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li a {
+		color: #333;
+		text-decoration: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li:hover {
+		background-color: #ccc;
+	  }
+	  
+	  [data-testid="dropdown"]:hover [data-testid="dropdown-menu"] {
+		display: block;
+	  }
 	h2 {
 		text-align: center;
 	}
@@ -139,14 +178,16 @@ a {
 		font-size: 12px;
 	}
 	[data-testid="hero"] {
+		display: none;
+	}
+
+	[data-testid="hero2"] {
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
 		margin: 0 auto;
 	}
-	div {
-		padding-right: 20px;
-	}
+	
 	[data-testid="currentDayTime"] {
 		text-align: center;
 		width: 100%;
@@ -165,6 +206,47 @@ a {
 		color: green;
 		margin-top: -12px ;
 	}
+	[data-testid="dropdown"] {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  [data-testid="dropdown-toggle"] {
+		color: #fff;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		margin-left: 20px;
+	  }
+	  
+	  [data-testid="dropdown-menu"] {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #f9f9f9;
+		border: 1px solid #ccc;
+		padding: 10px;
+		display: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li {
+		list-style: none;
+		margin: 0;
+		padding: 10px;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li a {
+		color: #333;
+		text-decoration: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li:hover {
+		background-color: #ccc;
+	  }
+	  
+	  [data-testid="dropdown"]:hover [data-testid="dropdown-menu"] {
+		display: block;
+	  }
 }
 
 @media (max-width: 768px) {
@@ -173,11 +255,13 @@ a {
 		font-size: 12px;
 	}
 	[data-testid="hero"] {
-		display: flex;
+		display: none;
 		justify-content: space-around;
 		width: 50%;
 		margin: 0 auto;
 	}
+	
+
 	[data-testid="currentDayTime"] {
 		text-align: center;
 		width: 50%;
@@ -185,4 +269,44 @@ a {
 		border-radius: 100%;
 		border: 2px solid green;
 	}
+	[data-testid="dropdown"] {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  [data-testid="dropdown-toggle"] {
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+		
+	  }
+	  
+	  [data-testid="dropdown-menu"] {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #0a020231;
+		border: 1px solid #0e010118;
+		padding: 10px;
+		display: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li {
+		list-style: none;
+		margin: 0;
+		padding: 10px;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li a {
+		color: #333;
+		text-decoration: none;
+	  }
+	  
+	  [data-testid="dropdown-menu"] li:hover {
+		background-color: #ccc;
+	  }
+	  
+	  [data-testid="dropdown"]:hover [data-testid="dropdown-menu"] {
+		display: block;
+	  }
 }
