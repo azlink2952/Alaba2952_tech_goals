@@ -157,7 +157,6 @@ a {
 		color: #fff;
 		padding: 1em;
 		text-align: center;
-		margin-left: 35px;
 	}
 	[data-testid="links"] {
 		display: none;
