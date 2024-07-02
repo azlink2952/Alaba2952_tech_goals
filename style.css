@@ -66,7 +66,8 @@ a {
 [data-testid="hero"] {
 	display: flex;
 	justify-content: space-around;
-	width: 40%;
+	width: 50%;
+	margin: 0 auto;
 }
 [data-testid="slackDisplayName"] {
 	font-size: 40px;
@@ -96,19 +97,26 @@ a {
 	}
 	[data-testid="hero"] {
 		display: flex;
-		padding-left: 40px;
 		justify-content: space-around;
 		width: 100%;
+		margin: 0 auto;
 	}
 	[data-testid="currentDayTime"] {
 		text-align: center;
-		width: 50%;
+		width: 70%;
 		margin: 0 auto;
 		border-radius: 100%;
 		border: 2px solid green;
 	}
 	h2 {
 		text-align: center;
+	}
+	header {
+		background-color: #33333311;
+		color: #fff;
+		padding: 1em;
+		text-align: center;
+		margin-left: 35px;
 	}
 	[data-testid="links"] {
 		display: none;
@@ -132,6 +140,7 @@ a {
 		justify-content: space-around;
 		padding-left: 20px;
 		width: 50%;
+		margin: 0 auto;
 	}
 	[data-testid="currentDayTime"] {
 		text-align: center;
