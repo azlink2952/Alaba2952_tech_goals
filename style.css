@@ -1,0 +1,141 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+header {
+	background-color: #33333311;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+section {
+	background-color: #fff;
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+	font-size: 12px;
+}
+h1, h2 {
+	color: #333;
+}
+h2 {
+	text-align: center;
+}
+ul {
+	margin-left: -20px;
+}
+p {
+	margin-bottom: 1em;
+}
+[data-testid="currentTimeUTC"] {
+    color: green;
+	font-weight: bolder;
+}
+[data-testid="slack-info"] {
+    text-align: center;
+}
+[data-testid="links"] {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bolder;
+	color:blueviolet;
+}
+[data-testid="currentDayTime"] {
+	text-align: center;
+	width: 17%;
+	margin: 0 auto;
+	border-radius: 100%;
+	border: 2px solid green;
+}
+[data-testid="currentDay"] {
+	color: green;
+	margin-top: -17px ;
+}
+[data-testid="hero"] {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+[data-testid="slackDisplayName"] {
+	font-size: 40px;
+	font-weight: bolder;
+	margin-bottom: -15px;
+	margin-top: -2px;
+}
+[data-testid="slackEmail"] {
+	font-weight: bolder;
+}
+[data-testid="slackProfilePicture"] {
+	border-radius: 0px 70px 0px 70px;
+}
+[data-testid="sec"] {
+	display: flex;
+}
+[data-testid="slack-info"] {
+	width: 80%;
+}
+[data-testid="linkss"] {
+	display: none;
+}
+@media (max-width: 480px) {
+	footer {
+		text-align: center;
+		font-size: 12px;
+	}
+	[data-testid="hero"] {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	[data-testid="currentDayTime"] {
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+		border-radius: 100%;
+		border: 2px solid green;
+	}
+	h2 {
+		text-align: center;
+	}
+	[data-testid="links"] {
+		display: none;
+	}
+	[data-testid="linkss"] {
+		display: grid;
+		text-align: center;
+	}
+	[data-testid="githubLink"] {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 768px) {
+	footer {
+		text-align: center;
+		font-size: 12px;
+	}
+	[data-testid="hero"] {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+	}
+	[data-testid="currentDayTime"] {
+		text-align: center;
+		width: 30%;
+		margin: 0 auto;
+		border-radius: 100%;
+		border: 2px solid green;
+	}
+}
