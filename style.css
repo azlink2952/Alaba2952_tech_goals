@@ -118,7 +118,7 @@ a {
 		padding: 10px;
 		border: none;
 		cursor: pointer;
-		margin-left: 20px;
+		margin-left: 40px;
 	  }
 	  
 	  [data-testid="dropdown-menu"] {
